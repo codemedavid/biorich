@@ -26,7 +26,7 @@ const Header: React.FC<HeaderProps> = ({ cartItemsCount, onCartClick, onMenuClic
                 className="h-10 sm:h-12 w-auto object-contain rounded-lg"
               />
               <span className="ml-3 text-lg sm:text-xl font-heading font-bold text-blush-600 tracking-tight">
-                Glow with Joo
+                The Babe Studio
               </span>
             </button>
 
@@ -124,7 +124,7 @@ const Header: React.FC<HeaderProps> = ({ cartItemsCount, onCartClick, onMenuClic
                   className="h-8 w-auto object-contain rounded-md"
                 />
                 <span className="text-lg font-heading font-bold text-blush-600">
-                  Glow with Joo
+                  The Babe Studio
                 </span>
               </div>
               <button
