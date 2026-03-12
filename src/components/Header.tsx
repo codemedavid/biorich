@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ShoppingCart, Menu, X, FlaskConical, Truck } from 'lucide-react';
+import { ShoppingCart, Menu, X, FlaskConical, Truck, HelpCircle, FileText, BookOpen } from 'lucide-react';
 
 interface HeaderProps {
   cartItemsCount: number;
@@ -44,6 +44,27 @@ const Header: React.FC<HeaderProps> = ({ cartItemsCount, onCartClick, onMenuClic
                 >
                   <Truck className="w-4 h-4" />
                   Track Order
+                </a>
+                <a
+                  href="/faq"
+                  className="text-sm font-medium text-charcoal-600 hover:text-brand-600 px-4 py-2 rounded-lg transition-colors flex items-center gap-2"
+                >
+                  <HelpCircle className="w-4 h-4" />
+                  FAQ
+                </a>
+                <a
+                  href="/coa"
+                  className="text-sm font-medium text-charcoal-600 hover:text-brand-600 px-4 py-2 rounded-lg transition-colors flex items-center gap-2"
+                >
+                  <FileText className="w-4 h-4" />
+                  COA
+                </a>
+                <a
+                  href="/protocols"
+                  className="text-sm font-medium text-charcoal-600 hover:text-brand-600 px-4 py-2 rounded-lg transition-colors flex items-center gap-2"
+                >
+                  <BookOpen className="w-4 h-4" />
+                  Protocols
                 </a>
               </nav>
 
@@ -132,6 +153,36 @@ const Header: React.FC<HeaderProps> = ({ cartItemsCount, onCartClick, onMenuClic
                     <Truck className="w-[18px] h-[18px]" />
                   </div>
                   Track Order
+                </a>
+
+                <a
+                  href="/faq"
+                  className="flex items-center gap-3 p-4 rounded-xl text-left font-medium text-charcoal-800 hover:bg-brand-50 transition-colors"
+                >
+                  <div className="p-2 rounded-lg bg-brand-50 text-brand-600">
+                    <HelpCircle className="w-[18px] h-[18px]" />
+                  </div>
+                  FAQ
+                </a>
+
+                <a
+                  href="/coa"
+                  className="flex items-center gap-3 p-4 rounded-xl text-left font-medium text-charcoal-800 hover:bg-brand-50 transition-colors"
+                >
+                  <div className="p-2 rounded-lg bg-brand-50 text-brand-600">
+                    <FileText className="w-[18px] h-[18px]" />
+                  </div>
+                  Certificate of Analysis
+                </a>
+
+                <a
+                  href="/protocols"
+                  className="flex items-center gap-3 p-4 rounded-xl text-left font-medium text-charcoal-800 hover:bg-brand-50 transition-colors"
+                >
+                  <div className="p-2 rounded-lg bg-brand-50 text-brand-600">
+                    <BookOpen className="w-[18px] h-[18px]" />
+                  </div>
+                  Protocols
                 </a>
               </div>
             </nav>

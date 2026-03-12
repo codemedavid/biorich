@@ -1,5 +1,5 @@
 import React from 'react';
-import { Truck, FlaskConical, Mail, MapPin } from 'lucide-react';
+import { Truck, FlaskConical, Mail, MapPin, Instagram, HelpCircle, FileText, BookOpen, Tag } from 'lucide-react';
 
 const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
@@ -35,6 +35,26 @@ const Footer: React.FC = () => {
               <MapPin className="w-4 h-4" />
               Marilao, Bulacan
             </div>
+            <a
+              href="https://www.instagram.com/biorichscience"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-charcoal-300 hover:text-brand-400 transition-colors flex items-center gap-2 text-sm"
+            >
+              <Instagram className="w-4 h-4" />
+              @biorichscience
+            </a>
+            <a
+              href="https://www.tiktok.com/@biorich2026"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-charcoal-300 hover:text-brand-400 transition-colors flex items-center gap-2 text-sm"
+            >
+              <svg className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1v-3.5a6.37 6.37 0 00-.79-.05A6.34 6.34 0 003.15 15.2a6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.34-6.34V8.69a8.28 8.28 0 004.76 1.5v-3.5a4.84 4.84 0 01-1-.14z"/>
+              </svg>
+              @biorich2026
+            </a>
           </div>
 
           {/* Quick Links */}
@@ -53,6 +73,27 @@ const Footer: React.FC = () => {
             >
               <Truck className="w-4 h-4" />
               Track Order
+            </a>
+            <a
+              href="/faq"
+              className="text-charcoal-300 hover:text-brand-400 transition-colors flex items-center gap-2 text-sm"
+            >
+              <HelpCircle className="w-4 h-4" />
+              FAQ
+            </a>
+            <a
+              href="/coa"
+              className="text-charcoal-300 hover:text-brand-400 transition-colors flex items-center gap-2 text-sm"
+            >
+              <FileText className="w-4 h-4" />
+              Certificate of Analysis
+            </a>
+            <a
+              href="/protocols"
+              className="text-charcoal-300 hover:text-brand-400 transition-colors flex items-center gap-2 text-sm"
+            >
+              <BookOpen className="w-4 h-4" />
+              Protocols
             </a>
           </div>
 

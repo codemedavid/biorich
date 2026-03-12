@@ -393,11 +393,14 @@ INSERT INTO public.products (id, name, description, base_price, category, image_
 ON CONFLICT (id) DO NOTHING;
 
 -- 4.7 Seed Product Variations
-INSERT INTO public.product_variations (product_id, name, price, stock_quantity) VALUES
-('a1a20001-0001-4e78-94f8-585d77059001', 'Vials Only', 1800.00, 50),
-('a1a20001-0001-4e78-94f8-585d77059001', 'Complete Set', 2300.00, 30),
-('a1a20002-0002-4e78-94f8-585d77059002', 'Vials Only', 3200.00, 50),
-('a1a20002-0002-4e78-94f8-585d77059002', 'Complete Set', 3700.00, 30)
+-- Ensure quantity_mg has a default for existing tables
+ALTER TABLE public.product_variations ALTER COLUMN quantity_mg SET DEFAULT 0;
+
+INSERT INTO public.product_variations (product_id, name, quantity_mg, price, stock_quantity) VALUES
+('a1a20001-0001-4e78-94f8-585d77059001', 'Vials Only', 0, 1800.00, 50),
+('a1a20001-0001-4e78-94f8-585d77059001', 'Complete Set', 0, 2300.00, 30),
+('a1a20002-0002-4e78-94f8-585d77059002', 'Vials Only', 0, 3200.00, 50),
+('a1a20002-0002-4e78-94f8-585d77059002', 'Complete Set', 0, 3700.00, 30)
 ON CONFLICT DO NOTHING;
 
 -- ============================================================================

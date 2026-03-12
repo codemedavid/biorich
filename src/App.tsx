@@ -13,7 +13,10 @@ import LoadingSpinner from './components/LoadingSpinner';
 // Lazy load route components
 const AdminDashboard = lazy(() => import('./components/AdminDashboard'));
 const COA = lazy(() => import('./components/COA'));
+const FAQ = lazy(() => import('./components/FAQ'));
+const PeptideCalculator = lazy(() => import('./components/PeptideCalculator'));
 const OrderTracking = lazy(() => import('./components/OrderTracking'));
+const ProtocolGuide = lazy(() => import('./components/ProtocolGuide'));
 
 import { useMenu } from './hooks/useMenu';
 // import { useCOAPageSetting } from './hooks/useCOAPageSetting';
@@ -105,8 +108,10 @@ function App() {
                 <Routes>
                     <Route path="/" element={<MainApp />} />
                     <Route path="/coa" element={<COA />} />
+                    <Route path="/faq" element={<FAQ />} />
+                    <Route path="/calculator" element={<PeptideCalculator />} />
                     <Route path="/track-order" element={<OrderTracking />} />
-                    {/* Peptalk routes removed */}
+                    <Route path="/protocols" element={<ProtocolGuide />} />
                     <Route path="/admin" element={<AdminDashboard />} />
                 </Routes>
             </Suspense>
