@@ -43,7 +43,9 @@ const Footer: React.FC = () => {
               Marilao, Bulacan
             </div>
             <a
-              href="viber://chat?number=%2B639765719350"
+              href="viber://chat/?number=639765719350"
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-charcoal-300 hover:text-brand-400 transition-colors flex items-center gap-2 text-sm"
             >
               <MessageCircle className="w-4 h-4" />
@@ -57,15 +59,6 @@ const Footer: React.FC = () => {
             >
               <MessageCircle className="w-4 h-4" />
               Contact on WhatsApp
-            </a>
-            <a
-              href="https://chat.whatsapp.com/FownLWzq5uz7CnBKdxmpwk"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-charcoal-300 hover:text-brand-400 transition-colors flex items-center gap-2 text-sm"
-            >
-              <MessageCircle className="w-4 h-4" />
-              Join WhatsApp Group
             </a>
           </div>
 
