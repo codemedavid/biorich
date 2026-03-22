@@ -38,10 +38,6 @@ const Footer: React.FC = () => {
               <Phone className="w-4 h-4" />
               +63 976 571 9350
             </a>
-            <div className="text-charcoal-300 flex items-center gap-2 text-sm">
-              <MapPin className="w-4 h-4" />
-              Marilao, Bulacan
-            </div>
             <a
               href="viber://chat/?number=639765719350"
               target="_blank"
